@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=DynaPuff:wght@400..700&family=Encode+Sans:wght@100..900&family=Itim&family=Jost:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lilita+One&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    <div id="tudo">
+        <div id="cabecalho">
+            <img src="img/carrinho.png" alt="carrinho">
+            <h2>Carrinho de compras cheio!</h2>
+        </div>
+        <div id="boxCheck">
+
+            <h3>Forma de pagamento:</h3>
+            <input type="checkbox" id="checkPix">
+            <label for="checkPix"><b>Pix</b></label>
+            <input type="checkbox" id="checkBoleto">
+            <label for="checkBoleto"><b>Boleto</b></label>
+            <input type="checkbox" id="checkCartao">
+            <label for="checkCartao"><b>Cartão de crédito</b></label> <br><br>
+
+            <label for="checkComprar"><b>Confirmar compra</b></label>
+            <input type="checkbox" id="checkComprar"> <br><br>
+        </div>
+        <button id="botaoConfirmar">Enviar</button>
+        <h4 id="resultado"></h4>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

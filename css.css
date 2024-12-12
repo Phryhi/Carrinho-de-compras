@@ -1,0 +1,92 @@
+body{
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#tudo{
+    background-color:rgb(169, 195, 218);
+    width:30rem;
+    height:33rem;
+    margin:0.7rem;
+    font-family: "Encode Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    border-radius: 10px;
+}
+#cabecalho img{
+    margin-top:1rem;
+    height:12rem;
+    width:12rem;
+    background-color:rgb(228, 232, 235);
+    border-radius: 180px;
+    animation-name: rodar;
+    animation-duration: 4s;
+}
+@keyframes rodar{
+    25%{transform:rotateZ(30deg)}
+}
+#botaoConfirmar{
+    width:5rem;
+    height:2rem;
+    background-color:black;
+    color:#ffffff;
+    border-radius: 8px;
+    margin-top: 0.3rem;
+}
+#botaoConfirmar:hover{
+    transition:1s;
+    transform: scale(1.08);
+}
+#botaoConfirmar:active{
+    transition:0.5s;
+    transform: scale(0.99);
+}
+#resultado{
+    padding-top: 5px;
+}
+h4{
+    margin-top: 1rem;
+}
+input[type='checkbox'] {
+    appearance: none;
+    height: 1.2em;
+    position: relative;
+    width: 1.2em;
+  }
+    
+  input[type='checkbox']::after, input[type='checkbox']::before {
+    box-sizing: border-box;
+    position: absolute;
+  }
+    
+  input[type='checkbox']::after {
+    border-bottom: 3px solid #FFFFFF;
+    border-right: 3px solid #FFFFFF;
+    content: '';
+    height: 75%;
+    left: 50%;
+    top: 50%;
+    transform: scale(0.1) translate(-50%, -50%);
+    transition: transform 0.2s;
+    width: 40%;
+  }
+    
+  input[type='checkbox']::before {
+    border: 3px solid #5500ff;
+    border-radius: 0.25em;
+    content: '';
+    height: 100%;
+    transition: background-color 0.2s;
+    width: 100%;
+  }
+    
+  input[type='checkbox']:checked::after {
+    transform: rotate(35deg) scale(1) translate(-100%, -30%);
+  }
+    
+  input[type='checkbox']:checked::before {
+    background-color: #5500ff;
+  }
